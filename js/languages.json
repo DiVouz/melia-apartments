@@ -1,0 +1,24 @@
+{
+    "gr": {
+        "id": "gr",
+        "img": "images/languages/gr.png",
+        "label": "Ελληνικά",
+        "data": [
+            {
+                "element_id": "test",
+                "element_innetHTML": "<b>δοκιμη</b> Ναι"
+            }
+        ]
+    },
+    "en": {
+        "id": "en",
+        "img": "images/languages/en.png",
+        "label": "English",
+        "data": [
+            {
+                "element_id": "test",
+                "element_innetHTML": "<b>test</b> Yes"
+            }
+        ]
+    }
+}
