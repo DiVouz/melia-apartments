@@ -66,6 +66,10 @@ function scrollToTab(tabId) {
 
 function squareTheRoundImgs() {
     $(".square_round_img").each(function(index) {
+        $(this).one("load", function() {
+            $(this).height($(this).width());
+        });
+
         $(this).height($(this).width());
     });
 }
