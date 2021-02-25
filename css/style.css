@@ -256,13 +256,13 @@ a {
 
     text-align: center;
 
-    margin-bottom: 32px;
+    margin: 8px;
 }
 
 .featuresTab > .main > .important > div > div {
     flex: 1;
 
-    margin: 0 12px;
+    margin: 8px 12px;
 }
 
 .featuresTab > .main > .important > div > div > i {
