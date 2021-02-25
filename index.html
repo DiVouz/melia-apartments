@@ -9,7 +9,7 @@
 
 		<title>Melia</title>
     
-    	<link rel="icon" href="img/logo.ico">
+    	<link rel="icon" href="images/logo.ico">
         
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 
@@ -22,46 +22,49 @@
 		<div class="parallax paral1">
 			<div class="logo">
 				<div class="img">
-					<img loading="lazy" src="https://drive.google.com/uc?id=1fTag7gsjO87BSTFw6B3XL4yXw-ZXi2x_">
+					<img loading="lazy" class="square_round_img" src="images/outside/1.png" id="square_round_img_logo_big">
 				</div>
 
 				<div class="text">
 					<div class="title">MELIA</div>
-					<div class="description">A better life for you</div>
+					<div class="description">APARTMENTS IN SKOPELOS ISLAND</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="navbar">
+		<div class="navbar" id="navbar">
 			<div class="title">
 				<div>
-					<div><img loading="lazy" src="https://drive.google.com/uc?id=1fTag7gsjO87BSTFw6B3XL4yXw-ZXi2x_"></div>
+					<div><img loading="lazy" class="square_round_img" src="images/outside/1.png" id="square_round_img_logo_small"></div>
 					<div class='text'>MELIA</div>
 				</div>
 			</div>
 
 			<div class="tabs">
 				<div>
-					<div class='button'>Apartments</div>
+					<div class='button' onclick="scrollToTab('apartmentsTab');">Apartments</div>
 				</div>
 				<div>
-					<div class='button'>Features</div>
+					<div class='button' onclick="scrollToTab('featuresTab');">Features</div>
 				</div>
 				<div>
-					<div class='button'>Images</div>
+					<div class='button' onclick="scrollToTab('imagesTab');">Images</div>
 				</div>
 				<div>
-					<div class='button'>Map</div>
+					<div class='button' onclick="scrollToTab('mapTab');">Map</div>
 				</div>
 				<div>
-					<div class='button'>Contact</div>
+					<div class='button' onclick="scrollToTab('aboutTab');">About</div>
+				</div>
+				<div>
+					<div class='button' onclick="scrollToTab('contactTab');">Contact</div>
 				</div>
 			</div>
 
 			<div class="languages">Lan</div>
 		</div>
 
-		<div class="container apartmentsTab">
+		<div class="container apartmentsTab" id="apartmentsTab">
 			<div class='title'>APARTMENTS</div>
 
 			<div class='main'>
@@ -104,11 +107,11 @@
 		<div class="parallax paral2">
 		</div>
 
-		<div class="container featuresTab">
-			<div class='title'>FEATURES</div>
+		<div class="container featuresTab" id="featuresTab">
+			<div class="title">FEATURES</div>
 
-			<div class='main'>
-				<div>
+			<div class="main">
+				<div class="important">
 					<div>
 						<div>
 							<i class="fas fa-water"></i>
@@ -148,8 +151,207 @@
 					</div>
 				</div>
 
+				<div class="extra" id="extraFeatures">
+					<div>
+						<div>
+							<div class="title">
+								<i class="fas fa-sink"></i>
+								<span class="text">Kitchen</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Dining table</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Stovetop</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Oven</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Kitchenware</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Electric kettle</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Refrigerator</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Kitchenette</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-bed"></i>
+								<span class="text">Bedroom</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Linens</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Wardrobe or closet</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-bath"></i>
+								<span class="text">Bathroom</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Private Bathroom</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Toilet paper</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Towels</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Shower</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-plus-circle"></i>
+								<span class="text">Room Amenities</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Socket near the bed</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Fold-up bed</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Clothes rack</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Tile/Marble floor</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Heating</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Air conditioning</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-wheelchair"></i>
+								<span class="text">Accessibility</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Entire unit wheelchair accessible</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Entire unit located on ground floor</span>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div>
+							<div class="title">
+								<i class="fas fa-sun"></i>
+								<span class="text">Outdoors</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Outdoor furniture</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Outdoor dining area</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Barbecue</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-utensils"></i>
+								<span class="text">Food & Drink</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Tea/Coffee maker</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-home"></i>
+								<span class="text">Building Characteristics</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Detached</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-plus-circle"></i>
+								<span class="text">Extra</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Air conditioning</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Smoke-free property</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Non-smoking rooms</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Family rooms</span>
+							</div>
+						</div>
+
+						<div>
+							<div class="title">
+								<i class="fas fa-fire-extinguisher"></i>
+								<span class="text">Safety & security</span>
+							</div>
+							<div>
+								<i class="far fa-check-circle"></i>
+								<span class="text">Fire extinguishers</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
 				<div>
-					<div class='button'>Show More</div>
+					<div class="button" onclick="toggleExtraFeatures();" id="extraFeaturesButton">Show More</div>
 				</div>
 			</div>
 		</div>
@@ -157,7 +359,85 @@
 		<div class="parallax paral3">
 		</div>
 
-		<div class="container">
+		<div class="container imagesTab" id="imagesTab">
+			<div class="title">IMAGES</div>
+		</div>
+
+		<div class="parallax paral4">
+		</div>
+
+		<div class="container mapTab" id="mapTab">
+			<div class="title">MAP LOCATION</div>
+
+			<div class="map">
+				<iframe 
+					loading="lazy" style="height:70vh;" width="100%" height="500"
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.8930401383536!2d23.614134977155576!3d39.16616598644237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a6e9e4e347730d%3A0xa804c883d4c385de!2sMelia%20studios!5e1!3m2!1sen!2sgr!4v1614191068972!5m2!1sen!2sgr"
+					frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+				</iframe>
+			</div>
+		</div>
+
+		<div class="parallax paral5">
+		</div>
+
+		<div class="container aboutTab" id="aboutTab">
+			<div class="title">ABOUT US</div>
+
+			<div class="main">
+				<div>
+					<div class="img">
+						<img loading="lazy" class="square_round_img" src="images/personal_photo.png" id="square_round_img_personal">
+					</div>
+
+					<div class="description">
+						My name is Kalliopi and I come from Glossa village in Skopelos island, I am a teacher of Greek literature.
+						I live in Volos (a city in mainland), but every year I go back to my favourite place, my homeland Skopelos and spend the late spring and the summer together with my mother and my relatives.
+						I will do my best to advise you about the beautiful places of our island (crystal blue water beaches, seafood restaurants, cafes with great view and traditional taverns) and make you feel like home.
+					</div>
+				</div>
+
+				<div class="down">
+					<div class="img name">
+						Kalliopi Orfanou
+					</div>
+
+					<div class="description">
+						Languages spoken: <b>Greek</b>, English, French	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="parallax paral6">
+		</div>
+
+		<div class="container contactTab" id="contactTab">
+			<div class="title">CONTACT US</div>
+
+			<div class="main">
+				<div class="telephone">
+					<span>Telephone:</span>
+					<a href="tel:+306945249464">(+30) 69 4524 9464</a>
+				</div>
+
+				<div class="email">
+					<span>Email:</span>
+					<a href="mailto:kallorf26@gmail.com">kallorf26@gmail.com</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			<div>
+				Copyright &copy; 2021 Villamalenaskopelos.com | All Rights Reserved
+			</div>
+			<div>
+				License number EOT (Greek Tourism  Organization): 0756K9200041001
+			</div>
+			<div>
+				Developed by <a href="https://divouz.github.io/DiVouz/" target="_blank" aria-label="Creator" rel="noopener" class="creator">DiVouz</a>
+			</div>
 		</div>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
