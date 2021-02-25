@@ -36,7 +36,7 @@ a {
 }
 
 .parallax { 
-	height: 50vh;
+	height: 40vh;
 
 	background-attachment: fixed;
 	background-position: center;
@@ -46,10 +46,11 @@ a {
 
 .parallax.paral1 { background-image: url(../images/outside/3.png); height: calc(100vh - 70px); }
 .parallax.paral2 { background-image: url(../images/outside/6.png); }
-.parallax.paral3 { background-image: url(../images/outside/7.png); }
+.parallax.paral3 { background-image: url(../images/outside/6.png); height: 15vh; }
 .parallax.paral4 { background-image: url(../images/outside/2.png); }
-.parallax.paral5 { background-image: url(../images/outside/4.png); }
-.parallax.paral6 { background-image: url(../images/outside/4.png); height: 10vh; }
+.parallax.paral5 { background-image: url(../images/outside/2.png); height: 15vh; }
+.parallax.paral6 { background-image: url(../images/outside/4.png); }
+.parallax.paral7 { background-image: url(../images/outside/4.png); height: 15vh; }
 
 .paral1 > .logo {
     position: absolute;
@@ -89,7 +90,7 @@ a {
     top: -1px;
 
     position: sticky;
-    z-index: 2;
+    z-index: 10;
 
     display: flex;
     flex-direction: row;
@@ -205,8 +206,10 @@ a {
     display: block;
 
     width: 100%;
-    height: auto;
+    height: 180px;
     
+    object-fit: cover;
+
     transform: scale(1);
 
     transition: 0.4s;
@@ -307,8 +310,106 @@ a {
     color: rgb(180, 180, 180);
 }
 
+.imagesTab > .main {
+    position: relative;
+
+    margin: auto;
+
+    max-width: 1200px;
+    height: calc(80vh - 70px);
+
+    background-color: rgb(50, 50, 50);
+}
+
+.imagesTab > .main > .arrow_left, .imagesTab > .main > .arrow_right {
+    position: absolute;
+    display: block;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 8px;
+    
+    background-color: rgba(40, 40, 40, 0.75);
+    
+    color: rgb(180, 180, 180);
+    font-size: 2em;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+
+    z-index: 3;
+}
+
+.imagesTab > .main > .arrow_left:hover, .imagesTab > .main > .arrow_right:hover {
+    background-color: rgba(30, 30, 30, 0.9);
+    color: rgb(220, 220, 220);
+}
+
+.imagesTab > .main > .arrow_left {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.imagesTab > .main > .arrow_right {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.imagesTab > .main > .img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagesTab > .main > .img > .real_img {
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.imagesTab > .main > .img > .real_img > img {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 100%;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    object-fit: contain;
+
+    transition: 0.4s;
+}
+
+.imagesTab > .main > .img > .description {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    bottom: 16px;
+    
+    font-size: 1.3em;
+
+    text-align: justify;
+}
+
 .mapTab > .map {
     padding: 8px 64px;
+}
+
+.descriptionTab > .main {
+    margin: auto;
+
+    max-width: 800px;
+
+    text-align: justify;
 }
 
 .aboutTab > .main > div {
