@@ -89,6 +89,7 @@ a {
 
 .navbar {
     position: sticky;
+    position: -webkit-sticky;
 
     top: -1px;
     left: 0;
@@ -185,6 +186,8 @@ a {
 
 .navbar_more_menu {
     position: sticky;
+    position: -webkit-sticky;
+
     display: none;
 
     top: calc(8vh - 1px);
