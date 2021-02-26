@@ -60,9 +60,9 @@ function toggleExtraFeatures() {
     
     if (element) {
         if (element.is(':hidden')) {
-            $("#extraFeaturesButton").html('Show Less');
+            $("#extraFeaturesButton lang").html(langData[currentLan].data['featuresTab_button_less']);
         } else {
-            $("#extraFeaturesButton").html('Show More');
+            $("#extraFeaturesButton lang").html(langData[currentLan].data['featuresTab_button_more']);
         }
 
         element.stop(true, false).slideToggle(600);
