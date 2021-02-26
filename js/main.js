@@ -67,7 +67,15 @@ function scrollToTab(tabId) {
 function squareTheRoundImgs(force) {
     $(".square_round_img").each(function(index) {
         if (force) {
-            $(this).height($(this).width());
+            let thisWidth = $(this).width();
+
+            if (thisWidth > 1) {
+                $(this).height($(this).width());
+            } else {
+                $(this).one("load", function() {
+                    $(this).height($(this).width());
+                });
+            }
         } else {
             $(this).one("load", function() {
                 $(this).height($(this).width());
@@ -112,4 +120,8 @@ function imageSliderGoTo(index) {
             }
         });
     }
+}
+
+function setFirstParalHeight() {
+    $(".parallax.paral1").css('height', $(window).height() - $(".navbar").outerHeight());
 }
