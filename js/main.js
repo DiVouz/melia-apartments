@@ -29,7 +29,9 @@ $(window).resize(function() {
     squareTheRoundImgs(true);
     setFirstParalHeight();
 
-    toggleExtraNavbarMenu(false);
+    if (!window.matchMedia("(max-width: 960px)").matches) {
+        toggleExtraNavbarMenu(false);
+    }
 });
 
 function setStickClass() {
@@ -65,17 +67,11 @@ function scrollToTab(tabId) {
         let extraNavbarMenu = $("#navbar_more_menu");
         if (extraNavbarMenu && !extraNavbarMenu.is(':hidden')) {
             toggleExtraNavbarMenu(false);
-
-            setTimeout(function () {
-                $('html, body').stop(true, false).animate({
-                    scrollTop: element.offset().top - navbarElement.height() + 2
-                }, 600);
-            }, 600);
-        } else {
-            $('html, body').stop(true, false).animate({
-                scrollTop: element.offset().top - navbarElement.height() + 2
-            }, 1200);
         }
+        
+        $('html, body').stop(true, false).animate({
+            scrollTop: element.offset().top - navbarElement.height() + 2
+        }, 1200);
     }
 }
 
@@ -138,7 +134,12 @@ function imageSliderGoTo(index) {
 }
 
 function setFirstParalHeight() {
-    $(".parallax.paral1").css('height', $(window).height() - $(".navbar").outerHeight());
+    let paralElement = $(".parallax.paral1");
+    let navbarElement = $(".navbar");
+
+    if (paralElement) {
+        paralElement.css('height', $(window).height() - navbarElement.outerHeight() - 1);
+    }
 }
 
 function toggleExtraNavbarMenu(forceOpen) {
@@ -147,9 +148,9 @@ function toggleExtraNavbarMenu(forceOpen) {
     if (element) {
         if (forceOpen != null) {
             if (forceOpen == true) {
-                element.stop(true, false).slideDown(600);
+                element.stop(true, false).slideDown(0);
             } else {
-                element.stop(true, false).slideUp(600);
+                element.stop(true, false).slideUp(0);
             }
         } else {
             element.stop(true, false).slideToggle(600);
