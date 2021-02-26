@@ -25,7 +25,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-    squareTheRoundImgs();
+    squareTheRoundImgs(true);
 });
 
 function setStickClass() {
@@ -64,13 +64,15 @@ function scrollToTab(tabId) {
     }
 }
 
-function squareTheRoundImgs() {
+function squareTheRoundImgs(force) {
     $(".square_round_img").each(function(index) {
-        $(this).one("load", function() {
+        if (force) {
             $(this).height($(this).width());
-        });
-
-        $(this).height($(this).width());
+        } else {
+            $(this).one("load", function() {
+                $(this).height($(this).width());
+            });
+        }
     });
 }
 
