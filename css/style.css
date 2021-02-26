@@ -33,7 +33,7 @@ a {
     background-size: cover;
     background-position: 50%;
     background-repeat: no-repeat;
-    background-color: #bdbdbd;
+    background-color: rgb(50, 50, 50);
 }
 
 .parallax { 
@@ -89,8 +89,7 @@ a {
 
 .navbar {
     position: sticky;
-    position: -webkit-sticky;
-    
+
     top: -1px;
     left: 0;
     
@@ -177,21 +176,56 @@ a {
 .navbar > .more {
     display: none;
 
-    flex: 1;
+    padding: 16px;
+
+    font-size: 1.3em;
+
+    cursor: pointer;
+}
+
+.navbar_more_menu {
+    position: sticky;
+    display: none;
+
+    top: calc(8vh - 1px);
+
+    padding: 16px 0;
+
+    border-top: 1px rgb(30, 30, 30) solid;
+
+    background-color: rgb(50, 50, 50);
+
+    z-index: 10;
+}
+
+.navbar_more_menu > .spacer {
+    border-top: 1px rgb(30, 30, 30) solid;
+
+    margin-top: 16px;
+}
+
+.navbar_more_menu > div {
+    padding: 8px 16px;
+
+    cursor: pointer;
 }
 
 @media screen and (max-width: 960px) {
     .navbar {
-        justify-content: space-between !important;
+        justify-content: space-between;
+    }
+
+    .navbar > .title {
+        flex: none;
     }
 
     .navbar > .tabs,
     .navbar > .languages {
-        display: none !important;
+        display: none;
     }
 
     .navbar > .more {
-        display: block !important;
+        display: block;
     }
 }
 
