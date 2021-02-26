@@ -61,7 +61,13 @@
 				</div>
 			</div>
 
-			<div class="languages">Lan</div>
+			<div class="languages" onclick="toggleBigLangMenu();">
+				<i class="fas fa-globe"></i>
+				<span id="big_lang_label"></span>
+
+				<div class="lang_choose" id="big_lang_choose">
+				</div>
+			</div>
 
 			<div class="more" onclick="toggleExtraNavbarMenu();"><i class="fas fa-bars"></i></div>
 		</div>
@@ -88,10 +94,18 @@
 			<div>
 				<div class='button' onclick="scrollToTab('contactTab');">Contact</div>
 			</div>
+
 			<div class="spacer">
 			</div>
+
 			<div>
-				<div class='languages'>Lan</div>
+				<div class='languages' onclick="toggleSmallLangMenu();">
+					<i class="fas fa-globe"></i>
+					<span id="small_lang_label"></span>
+				
+					<div class="lang_choose" id="small_lang_choose">
+					</div>
+				</div>
 			</div>
 		</div>
 

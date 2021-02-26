@@ -3,15 +3,24 @@ let imageSliderData = {
     "images": [
         {
             "src": "images/outside/1.png",
-            "description": "Test1"
+            "description": {
+                "en": "Test 1",
+                "gr": "Δοκιμη 1"
+            }
         },
         {
             "src": "images/outside/2.png",
-            "description": "Test2"
+            "description": {
+                "en": "Test 2",
+                "gr": "Δοκιμη 2"
+            }
         },
         {
             "src": "images/outside/3.png",
-            "description": "Test3"
+            "description": {
+                "en": "Test 3",
+                "gr": "Δοκιμη 3"
+            }
         }
     ]
 };
@@ -31,6 +40,7 @@ $(window).resize(function() {
 
     if (!window.matchMedia("(max-width: 960px)").matches) {
         toggleExtraNavbarMenu(false);
+        toggleSmallLangMenu(false);
     }
 });
 
@@ -67,6 +77,8 @@ function scrollToTab(tabId) {
         let extraNavbarMenu = $("#navbar_more_menu");
         if (extraNavbarMenu && !extraNavbarMenu.is(':hidden')) {
             toggleExtraNavbarMenu(false);
+            toggleBigLangMenu(false);
+            toggleSmallLangMenu(false);
         }
         
         $('html, body').stop(true, false).animate({
@@ -127,7 +139,7 @@ function imageSliderGoTo(index) {
             }, 200);
 
             if (descElement) {
-                descElement.html(imageSliderData.images[index].description);
+                descElement.html(imageSliderData.images[index].description[currentLan]);
             }
         });
     }
@@ -154,6 +166,38 @@ function toggleExtraNavbarMenu(forceOpen) {
             }
         } else {
             element.stop(true, false).slideToggle(600);
+        }
+    }
+}
+
+function toggleBigLangMenu(forceOpen) {
+    let element = $("#big_lang_choose");
+    
+    if (element) {
+        if (forceOpen != null) {
+            if (forceOpen == true) {
+                element.stop(true, false).slideDown(0);
+            } else {
+                element.stop(true, false).slideUp(0);
+            }
+        } else {
+            element.stop(true, false).slideToggle(400);
+        }
+    }
+}
+
+function toggleSmallLangMenu(forceOpen) {
+    let element = $("#small_lang_choose");
+    
+    if (element) {
+        if (forceOpen != null) {
+            if (forceOpen == true) {
+                element.stop(true, false).slideDown(0);
+            } else {
+                element.stop(true, false).slideUp(0);
+            }
+        } else {
+            element.stop(true, false).slideToggle(400);
         }
     }
 }

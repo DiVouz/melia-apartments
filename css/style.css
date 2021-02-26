@@ -171,7 +171,42 @@ a {
 }
 
 .navbar > .languages {
+    position: relative;
+    
     flex: 1;
+
+    cursor: pointer;
+}
+
+.navbar > .languages > .lang_choose,
+.navbar_more_menu > div > .languages > .lang_choose {
+    display: none;
+    
+    position: absolute;
+    
+    top: 35px;
+    
+    padding: 8px;
+
+    background-color: rgb(20, 20, 20);
+    
+    z-index: 11;
+
+    cursor: auto;
+}
+
+.navbar > .languages > .lang_choose {
+    top: 30px !important;
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar > .languages > .lang_choose > div,
+.navbar_more_menu > div > .languages > .lang_choose > div {
+    padding: 4px;
+
+    cursor: pointer;
 }
 
 .navbar > .more {
@@ -208,9 +243,20 @@ a {
 }
 
 .navbar_more_menu > div {
+    position: relative;
+    
     padding: 8px 16px;
 
     cursor: pointer;
+}
+
+.navbar_more_menu > div > .languages {
+    cursor: pointer;
+}
+
+.navbar > .languages > i,
+.navbar_more_menu > div > .languages > i {
+    font-size: 1.1em;
 }
 
 @media screen and (max-width: 960px) {
