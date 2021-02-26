@@ -434,7 +434,7 @@ a {
     text-align: justify;
 }
 
-.aboutTab > .main > div {
+.aboutTab > .main_big > div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -446,11 +446,11 @@ a {
     margin-top: 8px;
 }
 
-.aboutTab > .main > div > .img {
+.aboutTab > .main_big > div > .img {
     flex: 1;
 }
 
-.aboutTab > .main > div > .description {
+.aboutTab > .main_big > div > .description {
     flex: 4;
 
     margin-left: 16px;
@@ -458,7 +458,7 @@ a {
     text-align: justify;
 }
 
-.aboutTab > .main > div > .img > img {
+.aboutTab > .main_big > div > .img > img {
     position: relative;
     display: block;
     
@@ -469,13 +469,56 @@ a {
     height: auto;
 }
 
-.aboutTab > .main > div > .img.name {
+.aboutTab > .main_big > div > .img.name {
     text-align: center;
     font-size: 1.2em;
 }
 
-.aboutTab > .main > .down > .description {
+.aboutTab > .main_big > .down > .description {
     margin-top: 2px;
+}
+
+@media screen and (max-width: 830px) {
+    .aboutTab > .main_big {
+        display: none;
+    }
+
+    .aboutTab > .main_small {
+        display: block !important;
+    }
+}
+
+.aboutTab > .main_small {
+    display: none;
+}
+
+.aboutTab > .main_small > .img {
+    margin: auto;
+
+    width: 100%;
+    max-width: 224px;
+}
+
+.aboutTab > .main_small > .img > img {
+    width: 100%;
+    height: auto;
+}
+
+.aboutTab > .main_small > .img_name {
+    margin-top: 4px;
+
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.aboutTab > .main_small > .description {
+    margin-top: 32px;
+    
+    text-align: justify;
+}
+
+.aboutTab > .main_small > .languages {
+    margin-top: 32px;
 }
 
 .contactTab > .main {

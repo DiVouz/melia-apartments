@@ -39,7 +39,7 @@ function setStickClass() {
     observer.observe(stickyElm);
 }
 
-function toggleExtraFeatures(forceOpen) {
+function toggleExtraFeatures() {
     let element = $("#extraFeatures");
     
     if (element) {
