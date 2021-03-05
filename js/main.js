@@ -11,8 +11,8 @@ let imageSliderData = {
         {
             "src": "images/outside/2.png",
             "description": {
-                "en": "Test 2",
-                "gr": "Δοκιμη 2"
+                "en": "",
+                "gr": ""
             }
         },
         {
@@ -59,11 +59,7 @@ function toggleExtraFeatures() {
     let element = $("#extraFeatures");
     
     if (element) {
-        if (element.is(':hidden')) {
-            $("#extraFeaturesButton lang").html(langData[currentLan].data['featuresTab_button_less']);
-        } else {
-            $("#extraFeaturesButton lang").html(langData[currentLan].data['featuresTab_button_more']);
-        }
+        initExtraFeatures();
 
         element.stop(true, false).slideToggle(600);
     }

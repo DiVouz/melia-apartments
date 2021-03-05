@@ -101,9 +101,21 @@ let langData = {
 
             "descriptionTab_title": "DESCRIPTION",
             "descriptionTab_main": `
-                My name is Kalliopi and I come from Glossa village in Skopelos island, I am a teacher of Greek literature.
-                I live in Volos (a city in mainland), but every year I go back to my favourite place, my homeland Skopelos and spend the late spring and the summer together with my mother and my relatives.
-                I will do my best to advise you about the beautiful places of our island (crystal blue water beaches, seafood restaurants, cafes with great view and traditional taverns) and make you feel like home.
+                Melia apartments are situated in the seaside settlement of Loutraki, on Skopelos island.
+                Built just in front of the sea, they are the ideal choice for relaxing family holidays in a peaceful and natural environment.
+                The apartments are consisted from a main bedroom, a bathroom and a fully equiped kitchen.
+                At the exterionr space of the apartments under the leafy trees, there are wooden tables where you can enjoy your meal or your drink and admire the magnificent view during sunset.
+                They are only a few meters away from super markets, bakery, cafes, restaurants and the bus and taxi station.
+                The nearest beaches are within a 200 metres reach.
+                The bathroom in Melia studio 1 has been renovated in 2020.
+                <br>
+                <br>
+                <span class="underline">How to get there?</span>
+                <br>
+                It is very easy to locate Melia apartments.
+                They are only 400 metres away from Glossa port.
+                Also there is a bus and taxi station in a very short distance.
+                If you come by car, there is a parking spot just outside the apartmets.
             `,
             
             "aboutTab_title": "ABOUT US",
@@ -222,9 +234,21 @@ let langData = {
 
             "descriptionTab_title": "DESCRIPTION",
             "descriptionTab_main": `
-                My name is Kalliopi and I come from Glossa village in Skopelos island, I am a teacher of Greek literature.
-                I live in Volos (a city in mainland), but every year I go back to my favourite place, my homeland Skopelos and spend the late spring and the summer together with my mother and my relatives.
-                I will do my best to advise you about the beautiful places of our island (crystal blue water beaches, seafood restaurants, cafes with great view and traditional taverns) and make you feel like home.
+                Melia apartments are situated in the seaside settlement of Loutraki, on Skopelos island.
+                Built just in front of the sea, they are the ideal choice for relaxing family holidays in a peaceful and natural environment.
+                The apartments are consisted from a main bedroom, a bathroom and a fully equiped kitchen.
+                At the exterionr space of the apartments under the leafy trees, there are wooden tables where you can enjoy your meal or your drink and admire the magnificent view during sunset.
+                They are only a few meters away from super markets, bakery, cafes, restaurants and the bus and taxi station.
+                The nearest beaches are within a 200 metres reach.
+                The bathroom in Melia studio 1 has been renovated in 2020.
+                <br>
+                <br>
+                <span class="underline">How to get there?</span>
+                <br>
+                It is very easy to locate Melia apartments.
+                They are only 400 metres away from Glossa port.
+                Also there is a bus and taxi station in a very short distance.
+                If you come by car, there is a parking spot just outside the apartmets.
             `,
             
             "aboutTab_title": "ABOUT US",
@@ -258,6 +282,9 @@ $(document).ready(function() {
 });
 
 function initLangBox() {
+    $("#big_lang_label").html('');
+    $("#small_lang_label").html('');
+    
     $("#big_lang_label").append(langData[currentLan].label);
     $("#small_lang_label").append(langData[currentLan].label);
 
@@ -266,16 +293,24 @@ function initLangBox() {
         newHTML = newHTML + `<div onclick="chooseLang('${i}');">${value.label}</div>`;
     });
 
+    $("#big_lang_choose").html('');
+    $("#small_lang_choose").html('');
+
     $("#big_lang_choose").append(newHTML);
     $("#small_lang_choose").append(newHTML);
 }
 
-function chooseLang(langID) {
-    toggleSmallLangMenu(false);
+function initExtraFeatures() {
+    let parentElement = $("#extraFeatures");
+    let element = $("#extraFeaturesButton lang");
 
-    if (currentLan == langID) return;
-
-    window.location.href = `${window.location.pathname}?l=${langID}`;
+    if (parentElement && element) {
+        if (parentElement.is(':hidden')) {
+            $("#extraFeaturesButton lang").html(langData[currentLan].data['featuresTab_button_less']);
+        } else {
+            $("#extraFeaturesButton lang").html(langData[currentLan].data['featuresTab_button_more']);
+        }
+    }
 }
 
 function initLangPage() {
@@ -291,4 +326,21 @@ function initLangPage() {
 
         $(this).html(innerHTML);
     });
+}
+
+function chooseLang(langID) {
+    toggleSmallLangMenu(false);
+
+    if (currentLan == langID) return;
+    currentLan = langID;
+
+    window.history.pushState({ additionalInformation: 'Updated the page language' }, document.title, `${window.location.pathname}?l=${langID}`);
+    window.history.replaceState({ additionalInformation: 'Updated the page language' }, document.title, `${window.location.pathname}?l=${langID}`);
+
+    initLangBox();
+
+    initLangPage();
+    
+    initExtraFeatures();
+    imageSliderGoTo(imageSliderIndex);
 }
