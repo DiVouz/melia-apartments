@@ -144,22 +144,22 @@ let imageSliderData = {
         {
             "src": "images/outside/13.jpg",
             "description": {
-                "en": "",
-                "gr": ""
+                "en": "Panormos beach",
+                "gr": "Panormos beach"
             }
         },
         {
             "src": "images/outside/14.jpg",
             "description": {
-                "en": "",
-                "gr": ""
+                "en": "Kastani beach",
+                "gr": "Kastani beach"
             }
         },
         {
             "src": "images/outside/15.jpg",
             "description": {
-                "en": "",
-                "gr": ""
+                "en": "Milia beach",
+                "gr": "Milia beach"
             }
         },
         {
@@ -281,9 +281,9 @@ function toggleExtraFeatures() {
     let element = $("#extraFeatures");
     
     if (element) {
-        initExtraFeatures();
-
-        element.stop(true, false).slideToggle(600);
+        element.stop(true, false).slideToggle(600, function() {
+            initExtraFeatures();
+        });
     }
 }
 
