@@ -13,7 +13,7 @@ body {
 
     font-size: 13pt;
     font-weight: 400;
-    font-family: open sans,sans-serif;
+    font-family: open sans, sans-serif;
 }
 
 a {
@@ -45,13 +45,13 @@ a {
 	background-size: cover;
 }
 
-.parallax.paral1 { background-image: url(../images/outside/3.png); height: 92vh; }
-.parallax.paral2 { background-image: url(../images/outside/6.png); }
-.parallax.paral3 { background-image: url(../images/outside/6.png); height: 15vh; }
-.parallax.paral4 { background-image: url(../images/outside/2.png); }
-.parallax.paral5 { background-image: url(../images/outside/2.png); height: 15vh; }
-.parallax.paral6 { background-image: url(../images/outside/4.png); }
-.parallax.paral7 { background-image: url(../images/outside/4.png); height: 15vh; }
+.parallax.paral1 { background-image: url('../images/outside/21.jpg'); height: 92vh; }
+.parallax.paral2 { background-image: url('../images/outside/19.jpg'); }
+.parallax.paral3 { background-image: url('../images/outside/19.jpg'); height: 15vh; }
+.parallax.paral4 { background-image: url('../images/outside/10.jpg'); }
+.parallax.paral5 { background-image: url('../images/outside/10.jpg'); height: 15vh; }
+.parallax.paral6 { background-image: url('../images/outside/15.jpg'); }
+.parallax.paral7 { background-image: url('../images/outside/15.jpg'); height: 15vh; }
 
 .paral1 > .logo {
     position: absolute;
@@ -83,7 +83,7 @@ a {
 }
 
 .paral1 > .logo > .text > .description {
-    font-size: 1.35em;
+    font-size: 1.5em;
     color: rgb(200, 200, 200);
 }
 
@@ -496,7 +496,7 @@ a {
     width: 100%;
     height: auto;
 
-    max-height: 100%;
+    max-height: calc(100% - 1px);
 
     top: 50%;
     transform: translateY(-50%);
@@ -512,11 +512,19 @@ a {
     left: 50%;
     transform: translateX(-50%);
 
-    bottom: 16px;
-    
-    font-size: 1.3em;
+    bottom: 0;
 
-    text-align: justify;
+    width: 100%;
+    
+    font-size: 1.15em;
+    text-align: center;
+    background-color: rgba(40, 40, 40, 0.75);
+
+    transition: 0.2s;
+}
+
+.imagesTab > .main > .img > .description.titleOn {
+    padding: 8px 0;
 }
 
 .mapTab > .map {

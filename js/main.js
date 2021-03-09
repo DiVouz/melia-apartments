@@ -2,24 +2,248 @@ let imageSliderIndex = 0;
 let imageSliderData = {
     "images": [
         {
-            "src": "images/outside/1.png",
-            "description": {
-                "en": "Test 1",
-                "gr": "Δοκιμη 1"
-            }
-        },
-        {
-            "src": "images/outside/2.png",
+            "src": "images/outside/1.jpg",
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/3.png",
+            "src": "images/outside/2.jpg",
             "description": {
-                "en": "Test 3",
-                "gr": "Δοκιμη 3"
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/3.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/4.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/studio1/1.jpg",
+            "description": {
+                "en": "Bedroom | Studio 1",
+                "gr": "Bedroom | Studio 1"
+            }
+        },
+        {
+            "src": "images/studio1/2.jpg",
+            "description": {
+                "en": "Bedroom | Studio 1",
+                "gr": "Bedroom | Studio 1"
+            }
+        },
+        {
+            "src": "images/studio1/3.jpg",
+            "description": {
+                "en": "Kitchenette | Studio 1",
+                "gr": "Kitchenette | Studio 1"
+            }
+        },
+        {
+            "src": "images/studio1/4.jpg",
+            "description": {
+                "en": "Bathroom | Studio 1",
+                "gr": "Bathroom | Studio 1"
+            }
+        },
+        {
+            "src": "images/studio2/1.jpg",
+            "description": {
+                "en": "Bedroom | Studio 2",
+                "gr": "Bedroom | Studio 2"
+            }
+        },
+        {
+            "src": "images/studio2/2.jpg",
+            "description": {
+                "en": "Bedroom | Studio 2",
+                "gr": "Bedroom | Studio 2"
+            }
+        },
+        {
+            "src": "images/studio2/3.jpg",
+            "description": {
+                "en": "Bedroom | Studio 2",
+                "gr": "Bedroom | Studio 2"
+            }
+        },
+        {
+            "src": "images/studio2/4.jpg",
+            "description": {
+                "en": "Kitchenette | Studio 2",
+                "gr": "Kitchenette | Studio 2"
+            }
+        },
+        {
+            "src": "images/outside/5.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/6.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/7.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/8.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/9.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/10.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/11.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/12.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/13.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/14.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/15.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/16.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/17.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/18.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/19.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/20.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/21.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/22.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/23.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/24.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/25.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/26.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
+            }
+        },
+        {
+            "src": "images/outside/27.jpg",
+            "description": {
+                "en": "",
+                "gr": ""
             }
         }
     ]
@@ -28,14 +252,12 @@ let imageSliderData = {
 $(document).ready(function() {
     setStickClass();
 
-    squareTheRoundImgs();
     setFirstParalHeight();
 
     imageSliderGoTo(imageSliderIndex);
 });
 
 $(window).resize(function() {
-    squareTheRoundImgs(true);
     setFirstParalHeight();
 
     if (!window.matchMedia("(max-width: 960px)").matches) {
@@ -83,26 +305,6 @@ function scrollToTab(tabId) {
     }
 }
 
-function squareTheRoundImgs(force) {
-    $(".square_round_img").each(function(index) {
-        if (force) {
-            let thisWidth = $(this).width();
-
-            if (thisWidth > 1) {
-                $(this).height($(this).width());
-            } else {
-                $(this).one("load", function() {
-                    $(this).height($(this).width());
-                });
-            }
-        } else {
-            $(this).one("load", function() {
-                $(this).height($(this).width());
-            });
-        }
-    });
-}
-
 function imageSliderAdd(amount) {
     imageSliderIndex += amount;
 
@@ -122,6 +324,8 @@ function imageSliderGoTo(index) {
         index = 0;
     }
 
+    imageSliderIndex = index;
+
     let imgElement = $("#imagesTab_img");
     let descElement = $("#imagesTab_description");
 
@@ -136,6 +340,12 @@ function imageSliderGoTo(index) {
 
             if (descElement) {
                 descElement.html(imageSliderData.images[index].description[currentLan]);
+                
+                if (imageSliderData.images[index].description[currentLan] != null && imageSliderData.images[index].description[currentLan] != '') {
+                    descElement.addClass('titleOn');
+                } else {
+                    descElement.removeClass('titleOn');
+                }
             }
         });
     }
