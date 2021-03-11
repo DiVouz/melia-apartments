@@ -98,8 +98,6 @@ let langData = {
 
             "imagesTab_title": "IMAGES",
 
-            "mapTab_title": "MAP LOCATION",
-
             "descriptionTab_title": "DESCRIPTION",
             "descriptionTab_main": `
                 Melia apartments are situated in the seaside settlement of Loutraki, on Skopelos island.
@@ -118,6 +116,8 @@ let langData = {
                 Also there is a bus and taxi station in a very short distance.
                 If you come by car, there is a parking spot just outside the apartmets.
             `,
+
+            "mapTab_title": "MAP LOCATION",
             
             "aboutTab_title": "ABOUT US",
             "aboutTab_description": `
@@ -232,8 +232,6 @@ let langData = {
 
             "imagesTab_title": "ΕΙΚΟΝΕΣ",
 
-            "mapTab_title": "ΤΟΠΟΘΕΣΙΑ ΣΤΟΝ ΧΑΡΤΗ",
-
             "descriptionTab_title": "ΠΕΡΙΓΡΑΦΗ",
             "descriptionTab_main": `
                 Τα διαμερίσματα Μέλια βρίσκονται στον παραθαλάσσιο οικισμό του Λουτρακίου, στη Σκόπελο. Χτισμένα ακριβώς μπροστά στη θάλασσα, είναι η ιδανική επιλογή για χαλαρωτικές οικογενειακές διακοπές σε ένα ήσυχο και φυσικό περιβάλλον.
@@ -251,12 +249,14 @@ let langData = {
                 Υπάρχει επίσης σταθμός λεωφορείων και ταξί σε πολύ μικρή απόσταση.
                 Εάν έρχεστε με αυτοκίνητο, υπάρχει χώρος στάθμευσης ακριβώς έξω από τα διαμερίσματα.
             `,
+
+            "mapTab_title": "ΤΟΠΟΘΕΣΙΑ ΣΤΟΝ ΧΑΡΤΗ",
             
             "aboutTab_title": "ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ",
             "aboutTab_description": `
-                My name is Kalliopi and I come from Glossa village in Skopelos island, I am a teacher of Greek literature.
-                I live in Volos (a city in mainland), but every year I go back to my favourite place, my homeland Skopelos and spend the late spring and the summer together with my mother and my relatives.
-                I will do my best to advise you about the beautiful places of our island (crystal blue water beaches, seafood restaurants, cafes with great view and traditional taverns) and make you feel like home.
+                Το όνομά μου είναι Καλλιόπη και κατάγομαι από το χωριό Γλώσσα της Σκοπέλου. Έχω σπουδάσει ελληνική φιλολογία.
+                Ζω στο Βόλο (μια πόλη στην ηπειρωτική χώρα στο νόμο Μαγνησίας), αλλά κάθε χρόνο επιστρέφω στο αγαπημένο μου μέρος, την πατρίδα μου τη Σκόπελο και περνάω τα τέλη της άνοιξης και του καλοκαιριού μαζί με τη μητέρα μου και τους συγγενείς μου.
+                Θα κάνω ό,τι καλύτερο μπορώ για να σας βοηθήσω να ανακαλύψετε τα όμορφα μέρη του νησιού μας (κρυστάλλινα νερά, παραλίες, εστιατόρια με θαλασσινά, καφετέριες με υπέροχη θέα και παραδοσιακές ταβέρνες) και να νιώσετε σαν στο σπίτι σας.
             `,
             "aboutTab_name": "Καλλιόπη Ορφανού",
             "aboutTab_lang": "Languages spoken: <b>Ελληνικά</b>, Αγγλικά, Γαλλικά",
