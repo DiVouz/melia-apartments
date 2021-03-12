@@ -260,7 +260,7 @@ $(document).ready(function() {
 $(window).resize(function() {
     setFirstParalHeight();
 
-    if (!window.matchMedia("(max-width: 960px)").matches) {
+    if (!window.matchMedia("(max-width: 1100px)").matches) {
         toggleExtraNavbarMenu(false);
         toggleSmallLangMenu(false);
     }
@@ -397,7 +397,7 @@ function toggleSmallLangMenu(forceOpen) {
     
     if (element) {
         if (forceOpen != null) {
-            if (forceOpen == true) {
+            if (forceOpen) {
                 element.stop(true, false).slideDown(0);
             } else {
                 element.stop(true, false).slideUp(0);

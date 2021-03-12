@@ -330,8 +330,6 @@ function initLangPage() {
 }
 
 function chooseLang(langID) {
-    toggleSmallLangMenu(false);
-
     if (currentLan == langID) return;
     currentLan = langID;
 
