@@ -16,28 +16,64 @@
 	</head>
 
 	<body class="body">
-		<div class="parallax paral1">
-			<div class="logo">
-				<div class="img">
-					<img height="100%" width="100%" class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment">
-				</div>
+		<header>
+			<div class="parallax paral1">
+				<div class="logo">
+					<div class="img">
+						<img height="100%" width="100%" class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment">
+					</div>
 
-				<div class="text">
-					<div class="title"><lang id="website_name"></lang></div>
-					<div class="description"><lang id="paral1_logo_text_description"></lang></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="navbar" id="navbar">
-			<div class="title">
-				<div>
-					<div><img height="100%" width="100%" class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment"></div>
-					<div class="text"><lang id="website_name"></lang></div>
+					<div class="text">
+						<div class="title"><lang id="website_name"></lang></div>
+						<div class="description"><lang id="paral1_logo_text_description"></lang></div>
+					</div>
 				</div>
 			</div>
 
-			<div class="tabs">
+			<div class="navbar" id="navbar">
+				<div class="title">
+					<div>
+						<div><img height="100%" width="100%" class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment"></div>
+						<div class="text"><lang id="website_name"></lang></div>
+					</div>
+				</div>
+
+				<div class="tabs">
+					<div>
+						<div class="button" href="#apartmentsTab" onclick="scrollToTab('apartmentsTab');"><lang id="navbar_tabs_apartmentsTab"></lang></div>
+					</div>
+					<div>
+						<div class="button" href="#featuresTab" onclick="scrollToTab('featuresTab');"><lang id="navbar_tabs_featuresTab"></lang></div>
+					</div>
+					<div>
+						<div class="button" href="#imagesTab" onclick="scrollToTab('imagesTab');"><lang id="navbar_tabs_imagesTab"></lang></div>
+					</div>
+					<div>
+						<div class="button" href="#descriptionTab" onclick="scrollToTab('descriptionTab');"><lang id="navbar_tabs_descriptionTab"></lang></div>
+					</div>
+					<div>
+						<div class="button" href="#mapTab" onclick="scrollToTab('mapTab');"><lang id="navbar_tabs_mapTab"></lang></div>
+					</div>
+					<div>
+						<div class="button" href="#aboutTab" onclick="scrollToTab('aboutTab');"><lang id="navbar_tabs_aboutTab"></lang></div>
+					</div>
+					<div>
+						<div class="button" href="#contactTab" onclick="scrollToTab('contactTab');"><lang id="navbar_tabs_contactTab"></lang></div>
+					</div>
+				</div>
+
+				<div class="languages" onclick="toggleBigLangMenu();">
+					<i class="fas fa-globe"></i>
+					<span id="big_lang_label"></span>
+
+					<div class="lang_choose" id="big_lang_choose">
+					</div>
+				</div>
+
+				<div class="more" onclick="toggleExtraNavbarMenu();"><i class="fas fa-bars"></i></div>
+			</div>
+
+			<div class="navbar_more_menu" id="navbar_more_menu">
 				<div>
 					<div class="button" href="#apartmentsTab" onclick="scrollToTab('apartmentsTab');"><lang id="navbar_tabs_apartmentsTab"></lang></div>
 				</div>
@@ -59,466 +95,434 @@
 				<div>
 					<div class="button" href="#contactTab" onclick="scrollToTab('contactTab');"><lang id="navbar_tabs_contactTab"></lang></div>
 				</div>
-			</div>
 
-			<div class="languages" onclick="toggleBigLangMenu();">
-				<i class="fas fa-globe"></i>
-				<span id="big_lang_label"></span>
-
-				<div class="lang_choose" id="big_lang_choose">
-				</div>
-			</div>
-
-			<div class="more" onclick="toggleExtraNavbarMenu();"><i class="fas fa-bars"></i></div>
-		</div>
-
-		<div class="navbar_more_menu" id="navbar_more_menu">
-			<div>
-				<div class="button" href="#apartmentsTab" onclick="scrollToTab('apartmentsTab');"><lang id="navbar_tabs_apartmentsTab"></lang></div>
-			</div>
-			<div>
-				<div class="button" href="#featuresTab" onclick="scrollToTab('featuresTab');"><lang id="navbar_tabs_featuresTab"></lang></div>
-			</div>
-			<div>
-				<div class="button" href="#imagesTab" onclick="scrollToTab('imagesTab');"><lang id="navbar_tabs_imagesTab"></lang></div>
-			</div>
-			<div>
-				<div class="button" href="#descriptionTab" onclick="scrollToTab('descriptionTab');"><lang id="navbar_tabs_descriptionTab"></lang></div>
-			</div>
-			<div>
-				<div class="button" href="#mapTab" onclick="scrollToTab('mapTab');"><lang id="navbar_tabs_mapTab"></lang></div>
-			</div>
-			<div>
-				<div class="button" href="#aboutTab" onclick="scrollToTab('aboutTab');"><lang id="navbar_tabs_aboutTab"></lang></div>
-			</div>
-			<div>
-				<div class="button" href="#contactTab" onclick="scrollToTab('contactTab');"><lang id="navbar_tabs_contactTab"></lang></div>
-			</div>
-
-			<div class="spacer">
-			</div>
-
-			<div>
-				<div class="languages" onclick="toggleSmallLangMenu();">
-					<i class="fas fa-globe"></i>
-					<span id="small_lang_label"></span>
-				
-					<div class="lang_choose" id="small_lang_choose">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="container apartmentsTab" id="apartmentsTab">
-			<div class="title"><lang id="apartmentsTab_title"></lang></div>
-
-			<div class="main">
-				<div class="card card1" onclick="scrollToTab('imagesTab'); imageSliderGoTo(4);">
-					<div class="img">
-						<img height="100%" width="100%" loading="lazy" src="images/studio1/1.jpg" alt="The bedroom of the studio 1, contains 2 beds">
-					</div>
-					<div class="text">
-						<div class="title">STUDIO 1</div>
-						<div class="description">
-							<lang id="apartmentsTab_card1_description"></lang>
-						</div>
-					</div>
-				</div>
-
-				<div class="card card2" onclick="scrollToTab('imagesTab'); imageSliderGoTo(8);">
-					<div class="img">
-						<img height="100%" width="100%" loading="lazy" src="images/studio2/3.jpg" alt="The bedroom of the studio 2, contains 2 beds">
-					</div>
-					<div class="text">
-						<div class="title">STUDIO 2</div>
-						<div class="description">
-							<lang id="apartmentsTab_card2_description"></lang>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="parallax paral2">
-		</div>
-
-		<div class="container featuresTab" id="featuresTab">
-			<div class="title"><lang id="featuresTab_title"></lang></div>
-
-			<div class="main">
-				<div class="important">
-					<div>
-						<div>
-							<div>
-								<i class="fas fa-water"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_1"></lang></span></div>
-							</div>
-							<div>
-								<i class="fas fa-parking"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_2"></lang></span></div>
-							</div>
-						</div>
-						<div>
-							<div>
-								<i class="fas fa-wifi"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_3"></lang></span></div>
-							</div>
-							<div>
-								<i class="fas fa-wheelchair"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_4"></lang></span></div>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div>
-								<i class="fas fa-wind"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_5"></lang></span></div>
-							</div>
-							<div>
-								<i class="fas fa-tv"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_6"></lang></span></div>
-							</div>
-						</div>
-						<div>
-							<div>
-								<i class="fas fa-sink"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_7"></lang></span></div>
-							</div>
-							<div>
-								<i class="fas fa-chair"></i>
-								<div class="text"><span></span><lang id="featuresTab_important_8"></lang></span></div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="extra" id="extraFeatures">
-					<div>
-						<div>
-							<div class="title">
-								<i class="fas fa-sink"></i>
-								<span class="text"><lang id="featuresTab_extra_title_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_2"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_3"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_4"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_5"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_6"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_1_7"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-bed"></i>
-								<span class="text"><lang id="featuresTab_extra_title_2"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_2_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_2_2"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-bath"></i>
-								<span class="text"><lang id="featuresTab_extra_title_3"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_3_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_3_2"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_3_3"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_3_4"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-plus-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_title_4"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_4_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_4_2"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_4_3"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_4_4"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_4_5"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-wheelchair"></i>
-								<span class="text"><lang id="featuresTab_extra_title_5"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_5_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_5_2"></lang></span>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div>
-							<div class="title">
-								<i class="fas fa-sun"></i>
-								<span class="text"><lang id="featuresTab_extra_title_6"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_6_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_6_2"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_6_3"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-utensils"></i>
-								<span class="text"><lang id="featuresTab_extra_title_7"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_7_1"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-home"></i>
-								<span class="text"><lang id="featuresTab_extra_title_8"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_8_1"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-plus-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_title_9"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_9_1"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_9_2"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_9_3"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_9_4"></lang></span>
-							</div>
-						</div>
-
-						<div>
-							<div class="title">
-								<i class="fas fa-fire-extinguisher"></i>
-								<span class="text"><lang id="featuresTab_extra_title_10"></lang></span>
-							</div>
-							<div>
-								<i class="far fa-check-circle"></i>
-								<span class="text"><lang id="featuresTab_extra_des_10_1"></lang></span>
-							</div>
-						</div>
-					</div>
+				<div class="spacer">
 				</div>
 
 				<div>
-					<div class="button" onclick="toggleExtraFeatures();" id="extraFeaturesButton"><lang id="featuresTab_button_more"></lang></div>
-				</div>
-			</div>
-		</div>
-
-		<div class="parallax paral3">
-		</div>
-
-		<div class="container imagesTab" id="imagesTab">
-			<div class="title"><lang id="imagesTab_title"></lang></div>
-
-			<div class="main">
-				<div class="arrow_left" onclick="imageSliderAdd(-1);"><i class="fas fa-chevron-left"></i></div>
-				<div class="arrow_right" onclick="imageSliderAdd(+1);"><i class="fas fa-chevron-right"></i></div>
-
-				<div class="img">
-					<div class="real_img">
-						<img height="100%" width="100%" loading="lazy" src="" id="imagesTab_img" alt="">
-					</div>
-
-					<div class="description" id="imagesTab_description">
+					<div class="languages" onclick="toggleSmallLangMenu();">
+						<i class="fas fa-globe"></i>
+						<span id="small_lang_label"></span>
+					
+						<div class="lang_choose" id="small_lang_choose">
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</header>
 
-		<div class="parallax paral4">
-		</div>
+		<main>
+			<div class="container apartmentsTab" id="apartmentsTab">
+				<div class="title"><lang id="apartmentsTab_title"></lang></div>
 
-		<div class="container descriptionTab" id="descriptionTab">
-			<div class="title"><lang id="descriptionTab_title"></lang></div>
+				<div class="main">
+					<div class="card card1" onclick="scrollToTab('imagesTab'); imageSliderGoTo(4);">
+						<div class="img">
+							<img height="100%" width="100%" loading="lazy" src="images/studio1/1.jpg" alt="The bedroom of the studio 1, contains 2 beds">
+						</div>
+						<div class="text">
+							<div class="title">STUDIO 1</div>
+							<div class="description">
+								<lang id="apartmentsTab_card1_description"></lang>
+							</div>
+						</div>
+					</div>
 
-			<div class="main">
-				<lang id="descriptionTab_main"></lang>
+					<div class="card card2" onclick="scrollToTab('imagesTab'); imageSliderGoTo(8);">
+						<div class="img">
+							<img height="100%" width="100%" loading="lazy" src="images/studio2/3.jpg" alt="The bedroom of the studio 2, contains 2 beds">
+						</div>
+						<div class="text">
+							<div class="title">STUDIO 2</div>
+							<div class="description">
+								<lang id="apartmentsTab_card2_description"></lang>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-
-		<div class="parallax paral5">
-		</div>
-
-		<div class="container mapTab" id="mapTab">
-			<div class="title"><lang id="mapTab_title"></lang></div>
-
-			<div class="map">
-				<iframe 
-					title="Google Maps apartments satellite location" loading="lazy"
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.8930401383536!2d23.614134977155576!3d39.16616598644237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a6e9e4e347730d%3A0xa804c883d4c385de!2sMelia%20studios!5e1!3m2!1sen!2sgr!4v1614191068972!5m2!1sen!2sgr"
-					frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-				</iframe>
+			
+			<div class="parallax paral2">
 			</div>
-		</div>
 
-		<div class="parallax paral6">
-		</div>
+			<div class="container featuresTab" id="featuresTab">
+				<div class="title"><lang id="featuresTab_title"></lang></div>
 
-		<div class="container aboutTab" id="aboutTab">
-			<div class="title"><lang id="aboutTab_title"></lang></div>
+				<div class="main">
+					<div class="important">
+						<div>
+							<div>
+								<div>
+									<i class="fas fa-water"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_1"></lang></span></div>
+								</div>
+								<div>
+									<i class="fas fa-parking"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_2"></lang></span></div>
+								</div>
+							</div>
+							<div>
+								<div>
+									<i class="fas fa-wifi"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_3"></lang></span></div>
+								</div>
+								<div>
+									<i class="fas fa-wheelchair"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_4"></lang></span></div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div>
+								<div>
+									<i class="fas fa-wind"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_5"></lang></span></div>
+								</div>
+								<div>
+									<i class="fas fa-tv"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_6"></lang></span></div>
+								</div>
+							</div>
+							<div>
+								<div>
+									<i class="fas fa-sink"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_7"></lang></span></div>
+								</div>
+								<div>
+									<i class="fas fa-chair"></i>
+									<div class="text"><span></span><lang id="featuresTab_important_8"></lang></span></div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-			<div class="main_big">
-				<div>
+					<div class="extra" id="extraFeatures">
+						<div>
+							<div>
+								<div class="title">
+									<i class="fas fa-sink"></i>
+									<span class="text"><lang id="featuresTab_extra_title_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_2"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_3"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_4"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_5"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_6"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_1_7"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-bed"></i>
+									<span class="text"><lang id="featuresTab_extra_title_2"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_2_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_2_2"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-bath"></i>
+									<span class="text"><lang id="featuresTab_extra_title_3"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_3_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_3_2"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_3_3"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_3_4"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-plus-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_title_4"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_4_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_4_2"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_4_3"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_4_4"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_4_5"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-wheelchair"></i>
+									<span class="text"><lang id="featuresTab_extra_title_5"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_5_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_5_2"></lang></span>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div>
+								<div class="title">
+									<i class="fas fa-sun"></i>
+									<span class="text"><lang id="featuresTab_extra_title_6"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_6_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_6_2"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_6_3"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-utensils"></i>
+									<span class="text"><lang id="featuresTab_extra_title_7"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_7_1"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-home"></i>
+									<span class="text"><lang id="featuresTab_extra_title_8"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_8_1"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-plus-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_title_9"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_9_1"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_9_2"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_9_3"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_9_4"></lang></span>
+								</div>
+							</div>
+
+							<div>
+								<div class="title">
+									<i class="fas fa-fire-extinguisher"></i>
+									<span class="text"><lang id="featuresTab_extra_title_10"></lang></span>
+								</div>
+								<div>
+									<i class="far fa-check-circle"></i>
+									<span class="text"><lang id="featuresTab_extra_des_10_1"></lang></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div>
+						<div class="button" onclick="toggleExtraFeatures();" id="extraFeaturesButton"><lang id="featuresTab_button_more"></lang></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="parallax paral3">
+			</div>
+
+			<div class="container imagesTab" id="imagesTab">
+				<div class="title"><lang id="imagesTab_title"></lang></div>
+
+				<div class="main">
+					<div class="arrow_left" onclick="imageSliderAdd(-1);"><i class="fas fa-chevron-left"></i></div>
+					<div class="arrow_right" onclick="imageSliderAdd(+1);"><i class="fas fa-chevron-right"></i></div>
+
+					<div class="img">
+						<div class="real_img">
+							<img height="100%" width="100%" loading="lazy" src="" id="imagesTab_img" alt="">
+						</div>
+
+						<div class="description" id="imagesTab_description">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="parallax paral4">
+			</div>
+
+			<div class="container descriptionTab" id="descriptionTab">
+				<div class="title"><lang id="descriptionTab_title"></lang></div>
+
+				<div class="main">
+					<lang id="descriptionTab_main"></lang>
+				</div>
+			</div>
+
+			<div class="parallax paral5">
+			</div>
+
+			<div class="container mapTab" id="mapTab">
+				<div class="title"><lang id="mapTab_title"></lang></div>
+
+				<div class="map">
+					<iframe 
+						title="Google Maps apartments satellite location" loading="lazy"
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3813.8930401383536!2d23.614134977155576!3d39.16616598644237!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14a6e9e4e347730d%3A0xa804c883d4c385de!2sMelia%20studios!5e1!3m2!1sen!2sgr!4v1614191068972!5m2!1sen!2sgr"
+						frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+					</iframe>
+				</div>
+			</div>
+
+			<div class="parallax paral6">
+			</div>
+
+			<div class="container aboutTab" id="aboutTab">
+				<div class="title"><lang id="aboutTab_title"></lang></div>
+
+				<div class="main_big">
+					<div>
+						<div class="img">
+							<img height="100%" width="100%" class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
+						</div>
+
+						<div class="description">
+							<lang id="aboutTab_description"></lang>
+						</div>
+					</div>
+
+					<div class="down">
+						<div class="img name">
+							<lang id="aboutTab_name"></lang>
+						</div>
+
+						<div class="description">
+							<lang id="aboutTab_lang"></lang>
+						</div>
+					</div>
+				</div>
+
+				<div class="main_small">
 					<div class="img">
 						<img height="100%" width="100%" class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
 					</div>
 
-					<div class="description">
-						<lang id="aboutTab_description"></lang>
-					</div>
-				</div>
-
-				<div class="down">
-					<div class="img name">
+					<div class="img_name">
 						<lang id="aboutTab_name"></lang>
 					</div>
 
 					<div class="description">
+						<lang id="aboutTab_description"></lang>	
+					</div>
+
+					<div class="languages">
 						<lang id="aboutTab_lang"></lang>
 					</div>
 				</div>
 			</div>
 
-			<div class="main_small">
-				<div class="img">
-					<img height="100%" width="100%" class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
-				</div>
+			<div class="parallax paral7">
+			</div>
 
-				<div class="img_name">
-					<lang id="aboutTab_name"></lang>
-				</div>
+			<div class="container contactTab" id="contactTab">
+				<div class="title"><lang id="contactTab_title"></lang></div>
 
-				<div class="description">
-					<lang id="aboutTab_description"></lang>	
-				</div>
+				<div class="main">
+					<div class="telephone">
+						<span><lang id="contactTab_tel_label"></lang>:</span>
+						<a href="tel:+306945249464">(+30) 69 4524 9464</a>
+					</div>
 
-				<div class="languages">
-					<lang id="aboutTab_lang"></lang>
+					<div class="email">
+						<span><lang id="contactTab_email_label"></lang>:</span>
+						<a href="mailto:kallorf26@gmail.com">kallorf26@gmail.com</a>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="parallax paral7">
-		</div>
-
-		<div class="container contactTab" id="contactTab">
-			<div class="title"><lang id="contactTab_title"></lang></div>
-
-			<div class="main">
-				<div class="telephone">
-					<span><lang id="contactTab_tel_label"></lang>:</span>
-					<a href="tel:+306945249464">(+30) 69 4524 9464</a>
+			<div class="footer">
+				<div>
+					Copyright &copy; 2021 Villamalenaskopelos.com | All Rights Reserved
 				</div>
-
-				<div class="email">
-					<span><lang id="contactTab_email_label"></lang>:</span>
-					<a href="mailto:kallorf26@gmail.com">kallorf26@gmail.com</a>
+				<div>
+					<div>License number EOT (Greek Tourism Organization):</div>
+					Studio1: 00001083121 | Studio2: 00001083116
+				</div>
+				<div>
+					Developed by <a href="https://divouz.github.io/DiVouz/" target="_blank" aria-label="Creator" rel="noopener" class="creator">DiVouz</a>
 				</div>
 			</div>
-		</div>
-
-		<div class="footer">
-			<div>
-				Copyright &copy; 2021 Villamalenaskopelos.com | All Rights Reserved
-			</div>
-			<div>
-				<div>License number EOT (Greek Tourism Organization):</div>
-				Studio1: 00001083121 | Studio2: 00001083116
-			</div>
-			<div>
-				Developed by <a href="https://divouz.github.io/DiVouz/" target="_blank" aria-label="Creator" rel="noopener" class="creator">DiVouz</a>
-			</div>
-		</div>
+		</main>
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
