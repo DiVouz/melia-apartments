@@ -4,7 +4,7 @@ let langData = {
         "data": {
             "website_name": "MELIA",
 
-            "paral1_logo_text_description": "APARTMENTS IN SKOPELOS ISLAND",
+            "paral1_logo_text_description": "SEAFRONT APARTMENTS IN SKOPELOS ISLAND",
             
             "navbar_tabs_apartmentsTab": "Apartments",
             "navbar_tabs_featuresTab": "Features",
@@ -80,6 +80,7 @@ let langData = {
 
             "featuresTab_extra_title_7": "Food & Drink",
             "featuresTab_extra_des_7_1": "Tea / Coffee maker",
+            "featuresTab_extra_des_7_2": "Sandwich maker",
 
             "featuresTab_extra_title_8": "Building Characteristics",
             "featuresTab_extra_des_8_1": "Detached",
@@ -138,7 +139,7 @@ let langData = {
         "data": {
             "website_name": "ΜΕΛΙΑ",
 
-            "paral1_logo_text_description": "ΔΙΑΜΕΡΙΣΜΑΤΑ ΣΤΗ ΣΚΟΠΕΛΟ",
+            "paral1_logo_text_description": "ΠΑΡΑΘΑΛΑΣΣΙΑ ΔΙΑΜΕΡΙΣΜΑΤΑ ΣΤΗ ΣΚΟΠΕΛΟ",
             
             "navbar_tabs_apartmentsTab": "Διαμερίσματα",
             "navbar_tabs_featuresTab": "Χαρακτηριστικά",
@@ -214,6 +215,7 @@ let langData = {
 
             "featuresTab_extra_title_7": "Φαγητό & Ποτό",
             "featuresTab_extra_des_7_1": "Συσκευή καφέ / τσάι",
+            "featuresTab_extra_des_7_2": "Τοστιέρα",
 
             "featuresTab_extra_title_8": "Χαρακτηριστικά κτηρίου",
             "featuresTab_extra_des_8_1": "Αυτόνομο",
