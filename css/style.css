@@ -45,13 +45,21 @@ a {
 	background-size: cover;
 }
 
-.parallax.paral1 { background-image: url('../images/outside/21.jpg'); height: 92vh; }
-.parallax.paral2 { background-image: url('../images/outside/19.jpg'); }
-.parallax.paral3 { background-image: url('../images/outside/19.jpg'); height: 15vh; }
-.parallax.paral4 { background-image: url('../images/outside/10.jpg'); }
-.parallax.paral5 { background-image: url('../images/outside/10.jpg'); height: 15vh; }
-.parallax.paral6 { background-image: url('../images/outside/15.jpg'); }
-.parallax.paral7 { background-image: url('../images/outside/15.jpg'); height: 15vh; }
+.webp .parallax.paral1 { background-image: url('../images/outside/21.webp'); height: 92vh; }
+.webp .parallax.paral2 { background-image: url('../images/outside/19.webp'); }
+.webp .parallax.paral3 { background-image: url('../images/outside/19.webp'); height: 15vh; }
+.webp .parallax.paral4 { background-image: url('../images/outside/10.webp'); }
+.webp .parallax.paral5 { background-image: url('../images/outside/10.webp'); height: 15vh; }
+.webp .parallax.paral6 { background-image: url('../images/outside/15.webp'); }
+.webp .parallax.paral7 { background-image: url('../images/outside/15.webp'); height: 15vh; }
+
+.no-webp .parallax.paral1 { background-image: url('../images/outside/21.jpg'); height: 92vh; }
+.no-webp .parallax.paral2 { background-image: url('../images/outside/19.jpg'); }
+.no-webp .parallax.paral3 { background-image: url('../images/outside/19.jpg'); height: 15vh; }
+.no-webp .parallax.paral4 { background-image: url('../images/outside/10.jpg'); }
+.no-webp .parallax.paral5 { background-image: url('../images/outside/10.jpg'); height: 15vh; }
+.no-webp .parallax.paral6 { background-image: url('../images/outside/15.jpg'); }
+.no-webp .parallax.paral7 { background-image: url('../images/outside/15.jpg'); height: 15vh; }
 
 .paral1 > .logo {
     position: absolute;
@@ -72,7 +80,7 @@ a {
     margin-bottom: auto;
 }
 
-.paral1 > .logo > .img > img {
+.paral1 > .logo > .img img {
     max-width: 160px;
     height: auto;
 }
@@ -146,7 +154,7 @@ a {
     margin-left: 8px;
 }
 
-.navbar > .title > div > div > img {
+.navbar > .title > div > div img {
     max-width: 6vh;
 }
 
@@ -318,7 +326,7 @@ a {
     overflow: hidden;
 }
 
-.apartmentsTab > .main > .card > .img > img {
+.apartmentsTab > .main > .card > .img img {
     display: block;
 
     width: 100%;
@@ -331,7 +339,7 @@ a {
     transition: 0.4s;
 }
 
-.apartmentsTab > .main > .card:hover > .img > img {
+.apartmentsTab > .main > .card:hover > .img img {
     transform: scale(1.05);
 }
 
@@ -500,7 +508,7 @@ a {
     z-index: 2;
 }
 
-.imagesTab > .main > .img > .real_img > img {
+.imagesTab > .main > .img > .real_img img {
     position: relative;
 
     width: 100%;
@@ -581,7 +589,7 @@ a {
     text-align: justify;
 }
 
-.aboutTab > .main_big > div > .img > img {
+.aboutTab > .main_big > div > .img img {
     position: relative;
     display: block;
     
@@ -622,7 +630,7 @@ a {
     max-width: 224px;
 }
 
-.aboutTab > .main_small > .img > img {
+.aboutTab > .main_small > .img img {
     width: 100%;
     height: auto;
 }

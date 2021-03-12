@@ -2,245 +2,350 @@ let imageSliderIndex = 0;
 let imageSliderData = {
     "images": [
         {
-            "src": "images/outside/1.jpg",
+            "src": {
+                webp: "images/outside/1.webp",
+                jpg: "images/outside/1.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/2.jpg",
+            "src": {
+                webp: "images/outside/2.webp",
+                jpg: "images/outside/2.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/3.jpg",
+            "src": {
+                webp: "images/outside/3.webp",
+                jpg: "images/outside/3.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/4.jpg",
+            "src": {
+                webp: "images/outside/4.webp",
+                jpg: "images/outside/4.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/studio1/1.jpg",
+            "src": {
+                webp: "images/studio1/1.webp",
+                jpg: "images/studio1/1.jpg"
+            },
             "description": {
                 "en": "Bedroom | Studio 1",
                 "gr": "Bedroom | Studio 1"
             }
         },
         {
-            "src": "images/studio1/2.jpg",
+            "src": {
+                webp: "images/studio1/2.webp",
+                jpg: "images/studio1/2.jpg"
+            },
             "description": {
                 "en": "Bedroom | Studio 1",
                 "gr": "Bedroom | Studio 1"
             }
         },
         {
-            "src": "images/studio1/3.jpg",
+            "src": {
+                webp: "images/studio1/3.webp",
+                jpg: "images/studio1/3.jpg"
+            },
             "description": {
                 "en": "Kitchenette | Studio 1",
                 "gr": "Kitchenette | Studio 1"
             }
         },
         {
-            "src": "images/studio1/4.jpg",
+            "src": {
+                webp: "images/studio1/4.webp",
+                jpg: "images/studio1/4.jpg"
+            },
             "description": {
                 "en": "Bathroom | Studio 1",
                 "gr": "Bathroom | Studio 1"
             }
         },
         {
-            "src": "images/studio2/1.jpg",
+            "src": {
+                webp: "images/studio2/1.webp",
+                jpg: "images/studio2/1.jpg"
+            },
             "description": {
                 "en": "Bedroom | Studio 2",
                 "gr": "Bedroom | Studio 2"
             }
         },
         {
-            "src": "images/studio2/2.jpg",
+            "src": {
+                webp: "images/studio2/2.webp",
+                jpg: "images/studio2/2.jpg"
+            },
             "description": {
                 "en": "Bedroom | Studio 2",
                 "gr": "Bedroom | Studio 2"
             }
         },
         {
-            "src": "images/studio2/3.jpg",
+            "src": {
+                webp: "images/studio2/3.webp",
+                jpg: "images/studio2/3.jpg"
+            },
             "description": {
                 "en": "Bedroom | Studio 2",
                 "gr": "Bedroom | Studio 2"
             }
         },
         {
-            "src": "images/studio2/4.jpg",
+            "src": {
+                webp: "images/studio2/4.webp",
+                jpg: "images/studio2/4.jpg"
+            },
             "description": {
                 "en": "Kitchenette | Studio 2",
                 "gr": "Kitchenette | Studio 2"
             }
         },
         {
-            "src": "images/outside/5.jpg",
+            "src": {
+                webp: "images/outside/5.webp",
+                jpg: "images/outside/5.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/6.jpg",
+            "src": {
+                webp: "images/outside/6.webp",
+                jpg: "images/outside/6.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/7.jpg",
+            "src": {
+                webp: "images/outside/7.webp",
+                jpg: "images/outside/7.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/8.jpg",
+            "src": {
+                webp: "images/outside/8.webp",
+                jpg: "images/outside/8.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/9.jpg",
+            "src": {
+                webp: "images/outside/9.webp",
+                jpg: "images/outside/9.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/10.jpg",
+            "src": {
+                webp: "images/outside/10.webp",
+                jpg: "images/outside/10.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/11.jpg",
+            "src": {
+                webp: "images/outside/11.webp",
+                jpg: "images/outside/11.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/12.jpg",
+            "src": {
+                webp: "images/outside/12.webp",
+                jpg: "images/outside/12.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/13.jpg",
+            "src": {
+                webp: "images/outside/13.webp",
+                jpg: "images/outside/13.jpg"
+            },
             "description": {
                 "en": "Panormos beach",
                 "gr": "Panormos beach"
             }
         },
         {
-            "src": "images/outside/14.jpg",
+            "src": {
+                webp: "images/outside/14.webp",
+                jpg: "images/outside/14.jpg"
+            },
             "description": {
                 "en": "Kastani beach",
                 "gr": "Kastani beach"
             }
         },
         {
-            "src": "images/outside/15.jpg",
+            "src": {
+                webp: "images/outside/15.webp",
+                jpg: "images/outside/15.jpg"
+            },
             "description": {
                 "en": "Milia beach",
                 "gr": "Milia beach"
             }
         },
         {
-            "src": "images/outside/16.jpg",
+            "src": {
+                webp: "images/outside/16.webp",
+                jpg: "images/outside/16.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/17.jpg",
+            "src": {
+                webp: "images/outside/17.webp",
+                jpg: "images/outside/17.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/18.jpg",
+            "src": {
+                webp: "images/outside/18.webp",
+                jpg: "images/outside/18.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/19.jpg",
+            "src": {
+                webp: "images/outside/19.webp",
+                jpg: "images/outside/19.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/20.jpg",
+            "src": {
+                webp: "images/outside/20.webp",
+                jpg: "images/outside/20.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/21.jpg",
+            "src": {
+                webp: "images/outside/21.webp",
+                jpg: "images/outside/21.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/22.jpg",
+            "src": {
+                webp: "images/outside/22.webp",
+                jpg: "images/outside/22.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/23.jpg",
+            "src": {
+                webp: "images/outside/23.webp",
+                jpg: "images/outside/23.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/24.jpg",
+            "src": {
+                webp: "images/outside/24.webp",
+                jpg: "images/outside/24.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/25.jpg",
+            "src": {
+                webp: "images/outside/25.webp",
+                jpg: "images/outside/25.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/26.jpg",
+            "src": {
+                webp: "images/outside/26.webp",
+                jpg: "images/outside/26.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
             }
         },
         {
-            "src": "images/outside/27.jpg",
+            "src": {
+                webp: "images/outside/27.webp",
+                jpg: "images/outside/27.jpg"
+            },
             "description": {
                 "en": "",
                 "gr": ""
@@ -333,7 +438,12 @@ function imageSliderGoTo(index) {
         imgElement.stop(true, false).animate({
             opacity: -1.0,
         }, 200, function() {
-            imgElement.attr("src", imageSliderData.images[index].src);
+            if ($('html').hasClass('webp')) {
+                imgElement.attr("src", imageSliderData.images[index].src.webp);
+            } else {
+                imgElement.attr("src", imageSliderData.images[index].src.jpg);
+            }
+
             imgElement.stop(true, false).animate({
                 opacity: 1.0,
             }, 200);

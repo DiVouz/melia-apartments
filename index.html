@@ -20,7 +20,11 @@
 			<div class="parallax paral1">
 				<div class="logo">
 					<div class="img">
-						<img height="100%" width="100%" class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment">
+						<picture>
+							<source srcset="images/logo.webp" type="image/webp">
+							<source srcset="images/logo.jpg" type="image/jpeg"> 
+							<img class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment">
+						</picture>
 					</div>
 
 					<div class="text">
@@ -29,51 +33,23 @@
 					</div>
 				</div>
 			</div>
+		</header>
 
-			<div class="navbar" id="navbar">
-				<div class="title">
+		<div class="navbar" id="navbar">
+			<div class="title">
+				<div>
 					<div>
-						<div><img height="100%" width="100%" class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment"></div>
-						<div class="text"><lang id="website_name"></lang></div>
+						<picture>
+							<source srcset="images/logo.webp" type="image/webp">
+							<source srcset="images/logo.jpg" type="image/jpeg"> 
+							<img class="square_round_img" src="images/logo.jpg" alt="The logo of the website, contains the outside door of the apartment">
+						</picture>
 					</div>
+					<div class="text"><lang id="website_name"></lang></div>
 				</div>
-
-				<div class="tabs">
-					<div>
-						<div class="button" href="#apartmentsTab" onclick="scrollToTab('apartmentsTab');"><lang id="navbar_tabs_apartmentsTab"></lang></div>
-					</div>
-					<div>
-						<div class="button" href="#featuresTab" onclick="scrollToTab('featuresTab');"><lang id="navbar_tabs_featuresTab"></lang></div>
-					</div>
-					<div>
-						<div class="button" href="#imagesTab" onclick="scrollToTab('imagesTab');"><lang id="navbar_tabs_imagesTab"></lang></div>
-					</div>
-					<div>
-						<div class="button" href="#descriptionTab" onclick="scrollToTab('descriptionTab');"><lang id="navbar_tabs_descriptionTab"></lang></div>
-					</div>
-					<div>
-						<div class="button" href="#mapTab" onclick="scrollToTab('mapTab');"><lang id="navbar_tabs_mapTab"></lang></div>
-					</div>
-					<div>
-						<div class="button" href="#aboutTab" onclick="scrollToTab('aboutTab');"><lang id="navbar_tabs_aboutTab"></lang></div>
-					</div>
-					<div>
-						<div class="button" href="#contactTab" onclick="scrollToTab('contactTab');"><lang id="navbar_tabs_contactTab"></lang></div>
-					</div>
-				</div>
-
-				<div class="languages" onclick="toggleBigLangMenu();">
-					<i class="fas fa-globe"></i>
-					<span id="big_lang_label"></span>
-
-					<div class="lang_choose" id="big_lang_choose">
-					</div>
-				</div>
-
-				<div class="more" onclick="toggleExtraNavbarMenu();"><i class="fas fa-bars"></i></div>
 			</div>
 
-			<div class="navbar_more_menu" id="navbar_more_menu">
+			<div class="tabs">
 				<div>
 					<div class="button" href="#apartmentsTab" onclick="scrollToTab('apartmentsTab');"><lang id="navbar_tabs_apartmentsTab"></lang></div>
 				</div>
@@ -95,21 +71,55 @@
 				<div>
 					<div class="button" href="#contactTab" onclick="scrollToTab('contactTab');"><lang id="navbar_tabs_contactTab"></lang></div>
 				</div>
+			</div>
 
-				<div class="spacer">
+			<div class="languages" onclick="toggleBigLangMenu();">
+				<i class="fas fa-globe"></i>
+				<span id="big_lang_label"></span>
+
+				<div class="lang_choose" id="big_lang_choose">
 				</div>
+			</div>
 
-				<div>
-					<div class="languages" onclick="toggleSmallLangMenu();">
-						<i class="fas fa-globe"></i>
-						<span id="small_lang_label"></span>
-					
-						<div class="lang_choose" id="small_lang_choose">
-						</div>
+			<div class="more" onclick="toggleExtraNavbarMenu();"><i class="fas fa-bars"></i></div>
+		</div>
+
+		<div class="navbar_more_menu" id="navbar_more_menu">
+			<div>
+				<div class="button" href="#apartmentsTab" onclick="scrollToTab('apartmentsTab');"><lang id="navbar_tabs_apartmentsTab"></lang></div>
+			</div>
+			<div>
+				<div class="button" href="#featuresTab" onclick="scrollToTab('featuresTab');"><lang id="navbar_tabs_featuresTab"></lang></div>
+			</div>
+			<div>
+				<div class="button" href="#imagesTab" onclick="scrollToTab('imagesTab');"><lang id="navbar_tabs_imagesTab"></lang></div>
+			</div>
+			<div>
+				<div class="button" href="#descriptionTab" onclick="scrollToTab('descriptionTab');"><lang id="navbar_tabs_descriptionTab"></lang></div>
+			</div>
+			<div>
+				<div class="button" href="#mapTab" onclick="scrollToTab('mapTab');"><lang id="navbar_tabs_mapTab"></lang></div>
+			</div>
+			<div>
+				<div class="button" href="#aboutTab" onclick="scrollToTab('aboutTab');"><lang id="navbar_tabs_aboutTab"></lang></div>
+			</div>
+			<div>
+				<div class="button" href="#contactTab" onclick="scrollToTab('contactTab');"><lang id="navbar_tabs_contactTab"></lang></div>
+			</div>
+
+			<div class="spacer">
+			</div>
+
+			<div>
+				<div class="languages" onclick="toggleSmallLangMenu();">
+					<i class="fas fa-globe"></i>
+					<span id="small_lang_label"></span>
+				
+					<div class="lang_choose" id="small_lang_choose">
 					</div>
 				</div>
 			</div>
-		</header>
+		</div>
 
 		<main>
 			<div class="container apartmentsTab" id="apartmentsTab">
@@ -118,7 +128,11 @@
 				<div class="main">
 					<div class="card card1" onclick="scrollToTab('imagesTab'); imageSliderGoTo(4);">
 						<div class="img">
-							<img height="100%" width="100%" loading="lazy" src="images/studio1/1.jpg" alt="The bedroom of the studio 1, contains 2 beds">
+							<picture>
+								<source srcset="images/logo.webp" type="image/webp">
+								<source srcset="images/logo.jpg" type="image/jpeg"> 
+								<img loading="lazy" src="images/studio1/1.jpg" alt="The bedroom of the studio 1, contains 2 beds">
+							</picture>
 						</div>
 						<div class="text">
 							<div class="title">STUDIO 1</div>
@@ -130,7 +144,11 @@
 
 					<div class="card card2" onclick="scrollToTab('imagesTab'); imageSliderGoTo(8);">
 						<div class="img">
-							<img height="100%" width="100%" loading="lazy" src="images/studio2/3.jpg" alt="The bedroom of the studio 2, contains 2 beds">
+							<picture>
+								<source srcset="images/studio2/3.webp" type="image/webp">
+								<source srcset="images/studio2/3.jpg" type="image/jpeg"> 
+								<img loading="lazy" src="images/studio2/3.jpg" alt="The bedroom of the studio 2, contains 2 beds">
+							</picture>
 						</div>
 						<div class="text">
 							<div class="title">STUDIO 2</div>
@@ -453,7 +471,11 @@
 				<div class="main_big">
 					<div>
 						<div class="img">
-							<img height="100%" width="100%" class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
+							<picture>
+								<source srcset="images/personal_photo.webp" type="image/webp">
+								<source srcset="images/personal_photo.jpg" type="image/jpeg"> 
+								<img class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
+							</picture>
 						</div>
 
 						<div class="description">
@@ -474,7 +496,11 @@
 
 				<div class="main_small">
 					<div class="img">
-						<img height="100%" width="100%" class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
+						<picture>
+							<source srcset="images/personal_photo.webp" type="image/webp">
+							<source srcset="images/personal_photo.jpg" type="image/jpeg"> 
+							<img class="square_round_img" src="images/personal_photo.jpg" alt="The personal photo of Kalliopi Orfanou">
+						</picture>
 					</div>
 
 					<div class="img_name">
@@ -525,6 +551,7 @@
 		</main>
 
 		<script type="text/javascript" src="js/jquery-3.6.0-min.js"></script>
+		<script type="text/javascript" src="js/modernizr-min.js"></script>
 
         <script type="text/javascript" src="js/languages.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
