@@ -350,6 +350,16 @@ let imageSliderData = {
                 "en": "",
                 "gr": ""
             }
+        },
+        {
+            "src": {
+                webp: "images/outside/28.webp",
+                jpg: "images/outside/28.jpg"
+            },
+            "description": {
+                "en": "",
+                "gr": ""
+            }
         }
     ]
 };
