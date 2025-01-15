@@ -123,6 +123,16 @@ let imageSliderData = {
         },
         {
             "src": {
+                webp: "images/studio2/5.webp",
+                jpg: "images/studio2/5.jpg"
+            },
+            "description": {
+                "en": "Kitchenette | Studio 2",
+                "gr": "Kitchenette | Studio 2"
+            }
+        },
+        {
+            "src": {
                 webp: "images/outside/5.webp",
                 jpg: "images/outside/5.jpg"
             },
