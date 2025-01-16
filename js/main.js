@@ -41,6 +41,7 @@ let imageSliderData = {
                 "gr": ""
             }
         },
+        
         {
             "src": {
                 webp: "images/studio1/1.webp",
@@ -81,6 +82,7 @@ let imageSliderData = {
                 "gr": "Bathroom | Studio 1"
             }
         },
+
         {
             "src": {
                 webp: "images/studio2/1.webp",
@@ -131,6 +133,17 @@ let imageSliderData = {
                 "gr": "Kitchenette | Studio 2"
             }
         },
+        {
+            "src": {
+                webp: "images/studio2/6.webp",
+                jpg: "images/studio2/6.jpg"
+            },
+            "description": {
+                "en": "Bathroom | Studio 2",
+                "gr": "Bathroom | Studio 2"
+            }
+        },
+
         {
             "src": {
                 webp: "images/outside/5.webp",
